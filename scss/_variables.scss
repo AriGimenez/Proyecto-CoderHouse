@@ -1,0 +1,41 @@
+$color-grey: grey;
+$color-blue:rgb(44, 44, 145);
+@each $ciudad in la,
+chicago,
+ny {
+    .#{$ciudad} {
+        background-image: url('images/#{$ciudad}.jpg');
+    }
+}
+
+@mixing header {
+    background-color: $cool-blue;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+header {
+    @include header;
+}
+
+h2 {
+    font-size: 30px;
+    /*esto no se si va aca!!!!*/
+    text-align: center;
+    color: crimson;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.etiquetaH2 {
+    grid-area: h2;
+    text-align: center;
+    color: rgb(16, 16, 34);
+}
+
+.etiquetaH3 {
+    grid-area: p1;
+    text-align: center;
+    color: $color-blue;
+}

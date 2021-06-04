@@ -1,0 +1,93 @@
+
+
+
+
+/* seccion con grid*/
+.logo{
+   background-color: rgb(199, 194, 194);
+   width: 80vw;
+   height: 50vh;
+   margin-bottom: 70px;
+   display: grid;
+   grid-template-columns: 40% 60%;
+   grid-template-rows: 25vh 25vh;
+   grid-template-areas: 
+   "img h2"
+   "img p1"
+   }
+   @keyframes un_efecto{
+      0%{width: 100px;}
+      25%{width: 300px;}
+      50%{width: 200px;
+      background-color: red;}
+      75%{width: 300px;}
+      100%{width: 100px;
+      background-color: chartreuse;}
+   }
+.imagen_logo{
+   background-image:url(../resourse/logo.png);
+   grid-area: img;
+   background-position: center;
+   background-size: cover;
+   animation-name: un_efecto; 
+   animation-iteration-count: initial;
+   animation-timing-function: ease-in;
+   animation-duration: 2s;
+   animation-delay: 0s;
+   width: 30vw;
+   height: 20vh;
+   
+}
+.rubros{
+    width: 80vw;
+    margin-bottom: 70 px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+ 
+ }
+ .rubros div{
+    background-color: rgb(88, 90, 90);
+    width: 19vw;
+    height: 50vh;  
+    display: flex;
+    flex-direction: column;
+    color: cornsilk;
+    padding: 18px;
+ }
+ 
+ .rubros div h5{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+ }
+ .rubros div a{
+   
+    color: white;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(36, 36, 83);
+    margin-left: 15px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: width 5s ;
+ }
+ .imagen{
+    width: 150px;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transform: rotate(5deg);
+    }
+    div a:hover{
+        width:  140px;
+        height: 40px;
+        background-color: rgb(165, 14, 14);
+     }   
+     
+   
+            

@@ -1,0 +1,30 @@
+$background-color: beige;
+ul {
+    background-color: $background-color;
+    height: 12vh;
+    width: 180vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.menuDesplaglable {
+    text-transform: capitalize;
+}
+
+.contenedorTitulo {
+    height: 15vh;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paraTransitar:hover {
+    transition: 3s;
+    font-size: 2rem;
+    color: blue;
+}
